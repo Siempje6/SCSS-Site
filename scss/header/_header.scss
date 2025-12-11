@@ -1,0 +1,22 @@
+@use '../colors' as colors;
+
+header {
+    background: colors.$blocks_background;
+
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4.5fr 1fr;
+
+    .logo {
+        grid-column: 1/2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name {
+        grid-column: 2/3;
+    }
+}
