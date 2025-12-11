@@ -6,22 +6,22 @@
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 25px 100px 50px 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 topbar {
   height: 100%;
   width: 100%;
-  background-color: #042e3e;
+  background-color: #0644a2;
 }
 
 header {
-  background: #02212d;
-  grid-row: 2/3;
+  z-index: 100;
+  grid-row: 1/2;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 4.5fr 1fr;
+  grid-template-columns: 1fr 3.5fr 2fr;
 }
 header .logo {
   grid-column: 1/2;
@@ -29,14 +29,233 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
-header .name {
-  grid-column: 2/3;
+header .navigation {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8fb;
+  border-radius: 100px;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 15px 10px 30px;
+  margin: 30px 60px 20px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+header .navigation ul a.contactBtn {
+  border-radius: 50px;
+  padding: 15px 30px;
+  background: #f66c40;
+  color: #222222;
+  text-decoration: none;
+}
+header .navigation ul li a {
+  color: #222222;
+  text-decoration: none;
 }
 
-.winky-sans-Title {
-  font-family: "Winky Sans", sans-serif;
+.be-vietnam-pro-thin {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.be-vietnam-pro-extralight {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.be-vietnam-pro-light {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.be-vietnam-pro-regular {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.be-vietnam-pro-medium {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.be-vietnam-pro-semibold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.be-vietnam-pro-bold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.be-vietnam-pro-extrabold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.be-vietnam-pro-black {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.be-vietnam-pro-thin-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.be-vietnam-pro-extralight-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.be-vietnam-pro-light-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.be-vietnam-pro-regular-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.be-vietnam-pro-medium-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.be-vietnam-pro-semibold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.be-vietnam-pro-bold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.be-vietnam-pro-extrabold-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.be-vietnam-pro-black-italic {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.platypi-300 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.platypi-400 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.platypi-500 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.platypi-600 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.platypi-700 {
+  font-family: "Platypi", serif;
   font-optical-sizing: auto;
   font-weight: 700;
+  font-style: normal;
+}
+
+.platypi-800 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.platypi-300-h1 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.platypi-400-h1 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.platypi-500-h1 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.platypi-600-h1 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.platypi-700-h1 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.platypi-800-h1 {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: calc(50px + 2vw);
+  font-style: normal;
+}
+
+.be-vietnam-pro-semibold-h1 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
+  font-size: calc(50px + 2vw);
   font-style: normal;
 }
 
@@ -51,7 +270,7 @@ header .name {
   column-gap: 2px;
 }
 .logo .background .circle {
-  background: #598392;
+  background: #f66c40;
   width: 50px;
   height: 50px;
   border-radius: 2px;
@@ -77,8 +296,105 @@ header .name {
   align-items: center;
 }
 
+main {
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  height: 100%;
+  overflow: hidden;
+}
+main .grid-container {
+  margin: 150px 50px 100px 100px;
+  grid-column: 2/3;
+  height: 100%;
+}
+main .grid-container .row1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(80px) scale(0.9);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+main .grid-container .row1 img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+main .grid-container .row1.animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+main .grid-container .row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+main .grid-container .row2 h1 {
+  text-align: right;
+  margin: 0;
+}
+main .grid-container .row2 h1 span {
+  color: #f66c40;
+}
+main .grid-container .row2.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+
 body {
-  background: #01161E;
+  position: relative; /* nodig voor ::after */
+  background: #f8f8fb;
+  background-image: radial-gradient(circle, #d2d2d2 2px, transparent 2px);
+  background-size: 30px 30px;
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* overlay met flikkerende pixels */
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 1px);
+  background-size: 10px 10px;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

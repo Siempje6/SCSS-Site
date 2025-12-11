@@ -1,15 +1,51 @@
 @use "grid";
 
-@use 'buttons';
+@use "buttons";
 
-@use 'topbar/topbar';
+@use "topbar/topbar";
 
-@use 'header/header';
-@use 'header/logo';
-@use 'header/name';
+@use "header/header";
+@use "header/logo";
+@use "header/name";
 
-@use 'colors' as colors;
+@use "main/text-image";
+
+@use "footer/footer";
+
+@use "colors" as colors;
 
 body {
-    background: colors.$background_color;
+    position: relative; /* nodig voor ::after */
+    background: #f8f8fb;
+    background-image: radial-gradient(circle, #d2d2d2 2px, transparent 2px);
+    background-size: 30px 30px; 
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* overlay met flikkerende pixels */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10;
+
+    background-image: radial-gradient(circle, rgba(0,0,0,0.15) 1px, transparent 1px);
+    background-size: 10px 10px;
+
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    0%   { opacity: 0.05; }
+    50%  { opacity: 0.6; }
+    100% { opacity: 0.2; }
 }
