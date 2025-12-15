@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animatie Fotogalerij</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+</head>
+<body>
+<main>
+  <div class="overlay-text">
+    <h1 id="type-text">Welkom bij de dynamische fotogalerij!</h1>
+  </div>
+
+  <div class="photo-container">
+    <img src="https://placehold.co/600x400/FF5733/fff?text=Foto+1" class="photo"
+         data-title="Zonsondergang"
+         data-desc="Een prachtige zonsondergang bij het strand."
+         data-btn="Bekijk zonsondergang" alt="">
+    <img src="https://placehold.co/600x400/33FF57/fff?text=Foto+2" class="photo"
+         data-title="Bergen"
+         data-desc="Rustgevende bergen in de ochtendmist."
+         data-btn="Bekijk bergen" alt="">
+    <img src="https://placehold.co/600x400/3357FF/fff?text=Foto+3" class="photo"
+         data-title="Stad"
+         data-desc="Een bruisende stad vol leven en licht."
+         data-btn="Bekijk stad" alt="">
+    <img src="https://placehold.co/600x400/FF33A8/fff?text=Foto+4" class="photo"
+         data-title="Bos"
+         data-desc="Een magisch bos met hoge bomen."
+         data-btn="Bekijk bos" alt="">
+  </div>
+
+  <div class="sidebar left"></div>
+  <div class="sidebar right"></div>
+
+  <div class="popup">
+    <span class="close">×</span>
+    <img src="" class="popup-img" alt="">
+    <h2 class="popup-title"></h2>
+    <p class="popup-desc"></p>
+    <button class="popup-btn"></button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
