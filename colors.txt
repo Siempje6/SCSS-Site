@@ -1,0 +1,6 @@
+button and accent #de2330
+darker red also for hover states #9b0000
+background #0d0d0d
+
+Products background #7b7b7b
+accordion background #222222

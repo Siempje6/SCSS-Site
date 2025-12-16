@@ -1,0 +1,48 @@
+.grid-main {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1.2fr 0.7fr 7.1fr;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #0d0d0d;
+}
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr 0.5fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    grid-column: 1/2;
+}
+.search {
+    grid-column: 2/3;
+}
+.menuright {
+    grid-column: 4/5;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.menu-category {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+}
+
+main {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
