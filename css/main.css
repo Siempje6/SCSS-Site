@@ -1,0 +1,73 @@
+.image-carrousell-left {
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 1fr 101px;
+}
+
+.swipe-button {
+    grid-row: 3/4;
+    background-color: #616161c1;
+
+    border-radius: 50px;
+    
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swipe-button .left {
+    width: 71px;
+    height: 71px;
+    border: none;
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+
+    color: #de2330;
+    background-color: white;
+    cursor: pointer;
+}
+
+.swipe-button .right {
+    width: 71px;
+    height: 71px;
+    border: none;
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+
+    color: white;
+    background-color: #de2330;
+    cursor: pointer;
+}
+
+.swipe-button p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/*
+<div class="image-carrousell-left">
+    <h2></h2>
+    <div class="doubble-image-overlay">
+        <div class="image-front"><img src="" alt=""></div>
+            <img src="" alt="">
+        </div>
+
+        <div class="swipe-button">
+            <button class="left">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <p>
+                Swipe left and right
+            </p>
+            <button class="right">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+*/

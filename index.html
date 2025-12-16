@@ -4,13 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racing Simulators - Sim Rigs Europe | Trak Racer – Trak Racer EU
-    </title>
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/filter.css">
+    <title>Racing Simulators - Trak Racer EU</title>
+
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/filter.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
+    <script src="../js/swipe-btn.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="../js/vue-swipe-button.umd.min.js"></script>
 </head>
 
 <body>
@@ -22,6 +27,7 @@
                     <img src="images/trackracer.avif" alt="logo">
                 </div>
             </div>
+
             <div class="search">
                 <form action="index.html" method="post">
                     <input type="text" placeholder="Search all products">
@@ -32,27 +38,15 @@
             </div>
 
             <div class="menuright">
-                <div class="menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="favorites">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <div class="account">
-                    <span>Username</span>
-                    <i class="fa-regular fa-user"></i>
-                </div>
+                <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                <div class="favorites"><i class="fa-solid fa-heart"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="account"><span>Username</span><i class="fa-regular fa-user"></i></div>
             </div>
-
         </header>
 
         <div class="menu-category">
-            <div class="filter">
-                <i class="fa-solid fa-filter"></i>
-            </div>
+            <div class="filter"><i class="fa-solid fa-filter"></i></div>
             <div class="category">
                 <div class="sim">Sim Racing</div>
                 <div class="flight">Flight Sim</div>
@@ -62,7 +56,25 @@
         </div>
 
         <main>
-            <div class="image-carrousell-left"></div>
+            <div class="image-carrousell-left">
+                <h2></h2>
+                <div class="doubble-image-overlay">
+                    <div class="image-front"><img src="" alt=""></div>
+                    <img src="" alt="">
+                </div>
+
+                <div class="swipe-button">
+                    <button class="left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <p>
+                        Swipe left and right
+                    </p>
+                    <button class="right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
 
             <div class="news-product"></div>
             <div class="favorite-product"></div>
