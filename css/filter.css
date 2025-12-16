@@ -1,0 +1,71 @@
+.filter {
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background: #222222;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sim {
+    color: white;
+    background: #222222;
+    border-radius: 50px;
+
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.flight {
+    color: white;
+    background: #222222;
+    border-radius: 50px;
+
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.accessories {
+    color: white;
+    background: #222222;
+    border-radius: 50px;
+
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.brands {
+    color: white;
+    background: #222222;
+    border-radius: 50px;
+
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
